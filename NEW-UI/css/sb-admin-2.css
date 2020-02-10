@@ -11389,3 +11389,9 @@ body.sidebar-toggled footer.sticky-footer {
 #leaderboardList::-webkit-scrollbar-thumb:active {
     background: linear-gradient(left, #22ADD4, #1E98BA);
 }
+
+.table-grid td,
+.table-grid th {
+    /* border: 1px solid #dfe4e8; */
+    position: relative;
+}
