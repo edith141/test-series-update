@@ -8,13 +8,20 @@ var marksCanvas = document.getElementById("marksChart");
 var marksData = {
     labels: ["Score", "Accuracy", "Correct", "Wrong", "Time"],
     datasets: [{
-        label: "Student A",
-        backgroundColor: "rgba(200,0,0,0.2)",
-        data: [65, 80, 55, 15, 100]
+        label: "You",
+        backgroundColor: "rgba(32, 201, 166, 0.1)",
+        borderColor: "rgba(32, 201, 166, 0.5)",
+        data: [65, 80, 55, 15, 81]
     }, {
-        label: "Student B",
-        backgroundColor: "rgba(0,0,200,0.2)",
-        data: [82, 90, 70, 12, 110]
+        label: "Topper",
+        backgroundColor: "rgba(231, 74, 59, 0.15)",
+        borderColor: "rgba(231, 74, 59, 0.5)",
+        data: [82, 90, 70, 12, 100]
+    }, {
+        label: "Average",
+        backgroundColor: "rgba(60, 91, 246, 0.15)",
+        borderColor: "rgba(60, 91, 246, 0.5)",
+        data: [77, 75, 60, 10, 90]
     }]
 };
 
@@ -31,20 +38,10 @@ var radarChart = new Chart(marksCanvas, {
             }
         },
         maintainAspectRatio: false,
-        tooltips: {
-            backgroundColor: "rgb(255,255,255)",
-            bodyFontColor: "#858796",
-            borderColor: '#dddfeb',
-            borderWidth: 1,
-            xPadding: 15,
-            yPadding: 15,
-            displayColors: false,
-            caretPadding: 10,
-        },
+
         legend: {
             display: false
-        },
-        cutoutPercentage: 100,
+        }
     },
 });
 
