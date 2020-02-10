@@ -11405,10 +11405,15 @@ body.sidebar-toggled footer.sticky-footer {
     box-sizing: border-box;
 } */
 
-.indicator--score {
-    background-color: rgba(137, 66, 229, .1);
+.indicator {
     -webkit-animation: progresFill .5s;
     animation: progresFill .5s;
+}
+
+.indicator--score {
+    background-color: rgba(137, 66, 229, .1);
+    /* -webkit-animation: progresFill .5s;
+    animation: progresFill .5s; */
 }
 
 @-webkit-keyframes progresFill {
