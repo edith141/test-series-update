@@ -11397,20 +11397,21 @@ body.sidebar-toggled footer.sticky-footer {
     overflow: hidden;
 }
 
-*,
+
+/* *,
  ::after,
  ::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
+} */
 
 .indicator--score {
     background-color: rgba(137, 66, 229, .1);
-    -webkit-animation: progressbar2 .5s;
-    animation: progressbar2 .5s;
+    -webkit-animation: progresFill .5s;
+    animation: progresFill .5s;
 }
 
-@-webkit-keyframes progressbar2 {
+@-webkit-keyframes progresFill {
     from {
         left: -10%
     }
@@ -11422,7 +11423,7 @@ body.sidebar-toggled footer.sticky-footer {
 
 /* Standard syntax */
 
-@keyframes progressbar2 {
+@keyframes progresFill {
     from {
         left: -50%
     }
@@ -11462,9 +11463,10 @@ body.sidebar-toggled footer.sticky-footer {
     width: 5px;
 }
 
-*,
+
+/* *,
  ::after,
  ::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
+} */
