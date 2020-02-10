@@ -11395,3 +11395,49 @@ body.sidebar-toggled footer.sticky-footer {
     /* border: 1px solid #dfe4e8; */
     position: relative;
 }
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.indicator--score {
+    background-color: rgba(137, 66, 229, .1);
+}
+
+.indicator__progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+*,
+ ::after,
+ ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.indicator--score:after {
+    background-color: rgba(137, 66, 229, .5);
+}
+
+.indicator__progress:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+}
+
+*,
+ ::after,
+ ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
