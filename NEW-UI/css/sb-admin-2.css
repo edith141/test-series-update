@@ -11364,3 +11364,28 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
     width: 100%;
 }
+
+#leaderboardList::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#leaderboardList::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+#leaderboardList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(left, #fff, #e4e4e4);
+    border: 1px solid #aaa;
+}
+
+#leaderboardList::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+#leaderboardList::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(left, #22ADD4, #1E98BA);
+}
