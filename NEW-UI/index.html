@@ -355,13 +355,13 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Section wise distribution</h6>
                                 </div>
                                 <div class="card-body" style="overflow-x: scroll;">
-                                    <table class="table table-bordered table-grid">
+                                    <table class="table table-bordered table-grid section-table">
                                         <thead>
                                             <tr>
                                                 <th scope="col">Section</th>
-                                                <th scope="col">Score</th>
-                                                <th scope="col">Accuracy</th>
-                                                <th scope="col">Attempted</th>
+                                                <th scope="col" class="progressTr">Score</th>
+                                                <th scope="col" class="progressTr">Accuracy</th>
+                                                <th scope="col" class="progressTr">Attempted</th>
                                                 <th scope="col">Time</th>
                                             </tr>
                                         </thead>
@@ -370,25 +370,25 @@
                                                 <th scope="row">Sec1</th>
                                                 <td>
                                                     <div class="indicator__progress indicator indicator--score" style="width: 70%"></div>
-                                                    <div class="value ng-binding">
+                                                    <div>
                                                         13
-                                                        <span class="help-text ng-binding"> / 100</span>
+                                                        <span> / 100</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="indicator__progress indicator indicator--score" style="width: 84%"></div>
+                                                    <div>
+                                                        84
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="indicator__progress indicator indicator--score" style="width: 70%"></div>
-                                                    <div class="value ng-binding">
+                                                    <div>
                                                         13
-                                                        <span class="help-text ng-binding"> / 100</span>
+                                                        <span> / 100</span>
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <div class="indicator__progress indicator indicator--score" style="width: 70%"></div>
-                                                    <div class="value ng-binding">
-                                                        13
-                                                        <span class="help-text ng-binding"> / 100</span>
-                                                    </div>
-                                                </td>
+                                                <td>120 secs</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Sec2</th>
