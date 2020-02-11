@@ -1,0 +1,48 @@
+{
+    "result": {
+        "data": {
+            "comparison": {
+                "topper": [
+                    ["Reasoning Ability", 33.75, 35, 35, 35, 34, 0, "dac40a9cabe4454ab4a3de95b71c4eb5", 1341],
+                    ["English Language", 30, 30, 30, 30, 30, 0, "296aa6a2d028438f91d991fa130eaa85", 82],
+                    ["Quantitative Aptitude", 35, 35, 35, 35, 35, 0, "2a38419f50c740afa0014b0933e814fc", 1510]
+                ],
+                "topper_timing": 3720
+            },
+            "test_details": { "rating": null, "rid": 926900, "L4": "", "tid": 12167, "L5": "SBI Clerk Pre ST-1", "avg_score": "" },
+            "scorecard": [
+                ["English Language", 2.75, 30, 30, 24, 7, 0, "296aa6a2d028438f91d991fa130eaa85", 63],
+                ["Reasoning Ability", 0, 35, 35, 0, 0, 35, "dac40a9cabe4454ab4a3de95b71c4eb5", 0],
+                ["Quantitative Aptitude", 0, 35, 35, 0, 0, 35, "2a38419f50c740afa0014b0933e814fc", 0]
+            ],
+            "leaderboard": [
+                ["Swati singh sengar", 98.75],
+                ["Ratti Ram Meena", 92.5],
+                ["Sandeep Kumar", 88.5],
+                ["sush", 80.0],
+                ["mamata", 77.5],
+                ["Sushmita Singh", 53.75],
+                ["Manish Gupta", 52.0],
+                ["Chaitali Chawan", 51.0],
+                ["Ankita Saxena", 50.25],
+                ["m4math dd", 49.75],
+                ["simran", 48.0],
+                ["Smruti Sikha panda ", 47.25],
+                ["Adarsh Kumar S", 47.0],
+                ["Abhilasha rathi", 45.75],
+                ["Royal Man", 45.75],
+                ["jyoti ", 45.25],
+                ["ajay rastogi", 43.25],
+                ["Kiran Mahar", 43.0],
+                ["surinder kaushal", 42.25],
+                ["p s rama raju", 42.0]
+            ],
+            "overall_performance": { "air": [996, 1736], "total_time": 57 },
+            "remarks": { "weakness": [], "strength": [], "fastest_area": [], "slowest_area": [] }
+        },
+        "user": { "level": 9, "name": "Batman" }
+    },
+    "msg": "",
+    "code": 200,
+    "status": true
+}
