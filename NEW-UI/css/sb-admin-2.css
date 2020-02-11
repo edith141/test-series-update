@@ -9665,6 +9665,10 @@ button.bg-dark:focus {
     color: #4e73df !important;
 }
 
+.text-avg {
+    color: #6f42c1 !important;
+}
+
 .text-seag {
     color: #455A64 !important;
 }
@@ -10933,13 +10937,13 @@ a:focus {
 
 .chart-pie {
     position: relative;
-    height: 15rem;
+    height: 20rem;
     width: 100%;
 }
 
 @media (min-width: 768px) {
     .chart-pie {
-        height: calc(20rem - 43px) !important;
+        height: calc(23rem - 43px) !important;
     }
 }
 
@@ -11365,27 +11369,136 @@ body.sidebar-toggled footer.sticky-footer {
     width: 100%;
 }
 
-#leaderboardList::-webkit-scrollbar {
-    width: 10px;
-    background-color: #F5F5F5;
+.customScrollBar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    /* margin-left: 5px; */
+    background-color: rgba(245, 245, 245, 0);
 }
 
-#leaderboardList::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
+.customScrollBar::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0);
+    /* border: 1px solid #ccc; */
 }
 
-#leaderboardList::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: linear-gradient(left, #fff, #e4e4e4);
-    border: 1px solid #aaa;
+.customScrollBar::-webkit-scrollbar-thumb {
+    border-radius: 2em;
+    background: rgba(0, 0, 0, 0.171);
+    /* border: 1px solid rgb(77, 77, 77); */
 }
 
-#leaderboardList::-webkit-scrollbar-thumb:hover {
+.customScrollBar::-webkit-scrollbar-thumb:hover {
     background: #fff;
 }
 
-#leaderboardList::-webkit-scrollbar-thumb:active {
-    background: linear-gradient(left, #22ADD4, #1E98BA);
+.table-grid td,
+.table-grid th {
+    /* border: 1px solid #dfe4e8; */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* *,
+ ::after,
+ ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+
+.indicator {
+    -webkit-animation: progresFill .5s;
+    animation: progresFill .5s;
+}
+
+.indicator--score {
+    background-color: rgba(28, 200, 137, 0.2);
+    /* -webkit-animation: progresFill .5s;
+    animation: progresFill .5s; */
+}
+
+.indicator--score:after {
+    background-color: rgba(28, 200, 137, 0.6);
+}
+
+.indicator--accuracy {
+    background-color: rgba(78, 177, 223, 0.2);
+    /* -webkit-animation: progresFill .5s;
+    animation: progresFill .5s; */
+}
+
+.indicator--accuracy:after {
+    background-color: rgba(78, 114, 223, 0.6);
+}
+
+.indicator--attempted {
+    background-color: rgba(137, 66, 229, .2);
+    /* -webkit-animation: progresFill .5s;
+    animation: progresFill .5s; */
+}
+
+.indicator--attempted:after {
+    background-color: rgba(137, 66, 229, .6);
+}
+
+@-webkit-keyframes progresFill {
+    from {
+        left: -10%
+    }
+    to {
+        left: 10%
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes progresFill {
+    from {
+        left: -50%
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.indicator__progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; */
+}
+
+*,
+ ::after,
+ ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.indicator__progress:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+}
+
+
+/* *,
+ ::after,
+ ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+
+.section-table>thead>tr>.progressTr {
+    min-width: 150px;
+    /* background-color: var(--indigo); */
 }
