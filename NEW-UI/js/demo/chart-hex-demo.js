@@ -1,6 +1,7 @@
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
+Chart.defaults.global.legend.labels.usePointStyle = true;
 
 // Pie Chart Example
 var marksCanvas = document.getElementById("marksChart");
@@ -9,17 +10,17 @@ var marksData = {
     labels: ["Score", "Accuracy", "Correct", "Wrong", "Time"],
     datasets: [{
         label: "You",
-        backgroundColor: "rgba(32, 201, 166, 0.07)",
+        backgroundColor: "rgba(32, 201, 166, 0.05)",
         borderColor: "rgba(32, 201, 166, 0.6)",
         data: [65, 80, 55, 15, 81]
     }, {
         label: "Topper",
-        backgroundColor: "rgba(231, 74, 59, 0.07)",
+        backgroundColor: "rgba(231, 74, 59, 0.05)",
         borderColor: "rgba(231, 74, 59, 0.6)",
         data: [82, 90, 70, 12, 100]
     }, {
         label: "Average",
-        backgroundColor: "rgba(60, 91, 246, 0.07)",
+        backgroundColor: "rgba(60, 91, 246, 0.05)",
         borderColor: "rgba(60, 91, 246, 0.6)",
         data: [77, 75, 60, 10, 90]
     }]
@@ -34,13 +35,16 @@ var radarChart = new Chart(marksCanvas, {
             ticks: {
                 beginAtZero: true,
                 min: 0,
-                max: 100
+                suggestedMax: 100,
             }
         },
         maintainAspectRatio: false,
 
         legend: {
-            display: false
+            display: true,
+            position: 'bottom',
+            usePointStyle: true
+                // fullWidth: false
         }
     },
 });
