@@ -11,9 +11,10 @@ var myPieChart = new Chart(ctx, {
         labels: ["Correct", "Wrong", "Unattempted"],
         datasets: [{
             data: [24, 6, 12],
-            backgroundColor: ['#1cc88a', '#e74a3b', '#858796'],
-            hoverBackgroundColor: ['#13855c', '#be2617', '#60616f'],
-            hoverBorderColor: "rgba(234, 236, 244, 1)",
+            backgroundColor: ['rgba(28, 200, 138, 0.75)', 'rgba(231, 74, 59, 0.75)', 'rgba(133, 135, 150, 0.75)'],
+            borderColor: ['rgba(28, 200, 138, 0.9)', 'rgba(231, 74, 59, 0.9)', 'rgba(133, 135, 150, 0.9)'],
+            hoverBackgroundColor: ['rgba(28, 200, 138, 0.9)', 'rgba(231, 74, 59, 0.9)', 'rgba(133, 135, 150, 0.9)'],
+            hoverBorderColor: ['rgba(28, 200, 138)', 'rgba(231, 74, 59)', 'rgba(133, 135, 150)'],
         }],
     },
     options: {

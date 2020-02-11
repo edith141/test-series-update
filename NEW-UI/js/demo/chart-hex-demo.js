@@ -32,6 +32,7 @@ var radarChart = new Chart(marksCanvas, {
     data: marksData,
     options: {
         scale: {
+            // fontSize: 24,
             ticks: {
                 beginAtZero: true,
                 min: 0,
